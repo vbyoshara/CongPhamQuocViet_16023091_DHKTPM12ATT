@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="#008248"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Số a:"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/soA"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Số b:"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/soB"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Kết quả = "
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="#008248"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnTong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Tổng 2 số"
+        android:onClick="suKien"/>
+    <Button
+        android:onClick="suKien"
+        android:id="@+id/btnHieu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Hiệu 2 số"/>
+    <Button
+        android:onClick="suKien"
+        android:id="@+id/btnTich"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Tích 2 số"/>
+    <Button
+        android:onClick="suKien"
+        android:id="@+id/btnThuong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAllCaps="false"
+        android:text="Thương 2 số"/>
+    <Button
+        android:onClick="suKien"
+        android:id="@+id/btnUSCLN"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="40dp"
+        android:text="Ước số chung lớn nhất"/>
+    <Button
+        android:onClick="suKien"
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="40dp"
+        android:text="Thoát chương trình"
+        android:textColor="@android:color/holo_red_light"/>
+</LinearLayout>
