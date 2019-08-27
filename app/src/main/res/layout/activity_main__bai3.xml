@@ -19,12 +19,11 @@
         <EditText
             android:id="@+id/nam"
             android:layout_weight="1"
+            android:inputType="number"
             />
     </TableRow>
     <TableRow>
-        <TextView
-            android:text="Năm dương lịch"
-            android:textColor="@android:color/white"/>
+        <TextView/>
         <Button
             android:id="@+id/btnChuyenDoi"
             android:onClick="chuyenDoi"
