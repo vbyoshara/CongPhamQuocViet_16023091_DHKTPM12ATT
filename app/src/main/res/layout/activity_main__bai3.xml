@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Bai3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#008248"
+        android:gravity="center"
+        android:text="Chuyển đổi năm dương lịch"
+        android:textColor="@android:color/white" />
+    <TableRow>
+        <TextView
+            android:text="Năm dương lịch"/>
+        <EditText
+            android:id="@+id/nam"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Năm dương lịch"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnChuyenDoi"
+            android:onClick="chuyenDoi"
+            android:layout_weight="1"
+            android:text="Chuyển đổi"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Ket qua"/>
+        <TextView
+            android:id="@+id/txtKetQua"
+            android:text="Năm âm lịch"
+            android:background="#fcff47"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#008248"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+</TableLayout>
