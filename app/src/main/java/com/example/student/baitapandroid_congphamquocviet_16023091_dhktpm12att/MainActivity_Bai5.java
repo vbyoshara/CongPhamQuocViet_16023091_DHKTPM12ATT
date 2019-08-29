@@ -41,21 +41,28 @@ public class MainActivity_Bai5 extends AppCompatActivity {
                 txtThanhTien.setText(t + "");
                 break;
             case R.id.btnTiep:
-                ls.add(
-                        txtTenKhachHang.getText().toString() + '~' +
-                                txtSoLuongSach.getText().toString() + '~' +
-                                cbVIP.isChecked()
-                );
+
                 txtTenKhachHang.setText("");
                 txtSoLuongSach.setText("");
                 txtThanhTien.setText("0");
                 txtTenKhachHang.requestFocus();
                 break;
             case R.id.btnThongKe:
-                txtTongSoKH.setText(ls.toArray().length+ "");
-                for (String a : ls){
-                    
+                txtTongSoKH.setText(ls.toArray().length + "");
+                int tongSoVip = 0;
+                double tongSoTien = 0;
+                for (String a : ls) {
+                    String[] k = a.split("~");
+                    if(k[2]=="true"){
+                        tongSoVip++;
+                        tongSoTien += Integer.parseInt(k[1])*20000*10/100;
+                        continue;
+                    }
+                    tongSoTien += Integer.parseInt(k[1])*20000;
                 }
+                txtTongVIP.setText(tongSoVip);
+                txtTongDoanhThu.setText(tongSoTien + "");
+                break;
             case R.id.btnQuit:
                 finish();
                 break;
