@@ -1,6 +1,5 @@
 package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
-import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity_Bai1 extends AppCompatActivity {
+public class MainActivity_C1_B1 extends AppCompatActivity {
 
     public EditText soA,soB;
     public TextView txtKetQua;
@@ -16,7 +15,7 @@ public class MainActivity_Bai1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__bai1);
+        setContentView(R.layout.activity_main__c1_b1);
 
         soA = (EditText)findViewById(R.id.soA);
         soB = (EditText)findViewById(R.id.soB);

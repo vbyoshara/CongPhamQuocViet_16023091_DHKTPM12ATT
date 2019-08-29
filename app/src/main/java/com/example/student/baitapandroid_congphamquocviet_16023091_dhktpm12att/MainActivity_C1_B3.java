@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity_Bai3 extends AppCompatActivity {
+public class MainActivity_C1_B3 extends AppCompatActivity {
 
     EditText nam;
     TextView txtKetQua;
@@ -14,7 +14,7 @@ public class MainActivity_Bai3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__bai3);
+        setContentView(R.layout.activity_main__c1_b3);
 
         nam = (EditText)findViewById(R.id.nam);
         txtKetQua = (TextView)findViewById(R.id.txtKetQua);

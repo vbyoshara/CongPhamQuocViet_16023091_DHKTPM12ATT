@@ -6,13 +6,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
-public class MainActivity_Bai5 extends AppCompatActivity {
+public class MainActivity_C1_B5 extends AppCompatActivity {
 
     public EditText txtTenKhachHang, txtSoLuongSach, txtTongSoKH, txtTongVIP, txtTongDoanhThu;
     public TextView txtThanhTien;
@@ -22,7 +19,7 @@ public class MainActivity_Bai5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__bai5);
+        setContentView(R.layout.activity_main__c1_b5);
 
         txtTenKhachHang = (EditText) findViewById(R.id.txtTenKhachHang);
         txtSoLuongSach = (EditText) findViewById(R.id.txtSoLuongSach);

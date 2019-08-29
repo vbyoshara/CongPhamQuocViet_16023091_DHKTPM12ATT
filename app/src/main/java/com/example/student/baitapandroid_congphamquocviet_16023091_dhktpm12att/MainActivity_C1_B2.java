@@ -3,19 +3,17 @@ package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Switch;
 
-public class MainActivity_Bai2 extends AppCompatActivity {
+public class MainActivity_C1_B2 extends AppCompatActivity {
 
     EditText soF,soC;
     Button btnToC,btnToF,btnClear;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__bai2);
+        setContentView(R.layout.activity_main__c1_b2);
         soF = (EditText)findViewById(R.id.soF);
         soC = (EditText)findViewById(R.id.soC);
         btnToC = (Button) findViewById(R.id.btnToC);

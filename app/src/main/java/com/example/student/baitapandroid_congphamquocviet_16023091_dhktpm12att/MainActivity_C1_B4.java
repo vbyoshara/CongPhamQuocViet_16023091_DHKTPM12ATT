@@ -8,9 +8,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-public class MainActivity_Bai4 extends AppCompatActivity {
+public class MainActivity_C1_B4 extends AppCompatActivity {
 
     private RadioButton rdTrungCap, rdCaoDang, rdDaiHoc;
     private CheckBox cbDocBao, cbDocSach, cbDocCoding;
@@ -19,7 +17,7 @@ public class MainActivity_Bai4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__bai4);
+        setContentView(R.layout.activity_main__c1_b4);
 
         rdCaoDang = (RadioButton) findViewById(R.id.rdCaoDang);
         rdTrungCap = (RadioButton) findViewById(R.id.rdTrungCap);
