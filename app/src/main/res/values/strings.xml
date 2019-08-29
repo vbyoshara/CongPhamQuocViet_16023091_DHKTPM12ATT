@@ -1,3 +1,9 @@
 <resources>
+    <string-array name="list_member">
+        <item>Tèo</item>
+        <item>Tý</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
     <string name="app_name">BaiTapAndroid_CongPhamQuocViet_16023091_DHKTPM12ATT</string>
 </resources>

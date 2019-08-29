@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class MainActivity_Bai6 extends AppCompatActivity {
 
     public ListView lsvMember;
-    private ArrayList<String> ls;
+    private String[] ls;
     private TextView txtThongBao;
 
     @Override
@@ -24,25 +24,21 @@ public class MainActivity_Bai6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main__bai6);
 
-        lsvMember = (ListView)findViewById(R.id.lsvMember);
-        txtThongBao = (TextView)findViewById(R.id.txtThongBao);
+        lsvMember = (ListView) findViewById(R.id.lsvMember);
+        txtThongBao = (TextView) findViewById(R.id.txtThongBao);
 
-        ls = new ArrayList<String>();
+        ls = getResources().getStringArray(R.array.list_member);
 
-        ls.add("Tèo");
-        ls.add("Tý");
-        ls.add("Bin");
-        ls.add("Bo");
-
-        ArrayAdapter adt = new ArrayAdapter(MainActivity_Bai6.this,android.R.layout.simple_list_item_1,ls);
+        ArrayAdapter adt = new ArrayAdapter(MainActivity_Bai6.this, android.R.layout.simple_list_item_1, ls);
 
         lsvMember.setAdapter(adt);
 
         lsvMember.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                txtThongBao.setText("position " + i + ": value = " + ls.get(i));
+                txtThongBao.setText("position " + i + ": value = " + ls[i]);
             }
         });
+
     }
 }
