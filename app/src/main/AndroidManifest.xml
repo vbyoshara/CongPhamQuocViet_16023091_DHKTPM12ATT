@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity_Bai5">
+        <activity android:name=".MainActivity_Bai6">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
         <activity android:name=".MainActivity_Bai2" />
         <activity android:name=".MainActivity_Bai3" />
         <activity android:name=".MainActivity_Bai4" />
-        <activity android:name=".MainActivity_Bai6" />
+        <activity android:name=".MainActivity_Bai5" />
     </application>
 
 </manifest>
