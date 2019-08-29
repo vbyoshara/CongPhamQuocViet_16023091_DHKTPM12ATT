@@ -6,7 +6,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity_Bai5 extends AppCompatActivity {
@@ -14,7 +17,7 @@ public class MainActivity_Bai5 extends AppCompatActivity {
     public EditText txtTenKhachHang, txtSoLuongSach, txtTongSoKH, txtTongVIP, txtTongDoanhThu;
     public TextView txtThanhTien;
     public CheckBox cbVIP;
-    private List<String> ls;
+    private ArrayList<ArrayList<String>> ls;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,8 @@ public class MainActivity_Bai5 extends AppCompatActivity {
         txtThanhTien = (TextView) findViewById(R.id.txtThanhTien);
 
         cbVIP = (CheckBox) findViewById(R.id.cbVIP);
+
+        ls = new ArrayList<>();
     }
 
     public void suKien(View view) {
@@ -41,6 +46,14 @@ public class MainActivity_Bai5 extends AppCompatActivity {
                 txtThanhTien.setText(t + "");
                 break;
             case R.id.btnTiep:
+                ArrayList<String> mem = new ArrayList<>();
+                mem.add(txtTenKhachHang.getText().toString());
+                mem.add(txtSoLuongSach.getText().toString());
+                if(cbVIP.isChecked())
+                    mem.add("1");
+                else
+                    mem.add("0");
+                ls.add(mem);
 
                 txtTenKhachHang.setText("");
                 txtSoLuongSach.setText("");
@@ -48,20 +61,19 @@ public class MainActivity_Bai5 extends AppCompatActivity {
                 txtTenKhachHang.requestFocus();
                 break;
             case R.id.btnThongKe:
-                txtTongSoKH.setText(ls.toArray().length + "");
-                int tongSoVip = 0;
-                double tongSoTien = 0;
-                for (String a : ls) {
-                    String[] k = a.split("~");
-                    if(k[2]=="true"){
-                        tongSoVip++;
-                        tongSoTien += Integer.parseInt(k[1])*20000*10/100;
+                txtTongSoKH.setText(ls.size() + "");
+                double tongTien = 0;
+                int vip = 0;
+                for (int i = 0; i < ls.size(); i++) {
+                    if (ls.get(i).get(2) == "1") {
+                        vip++;
+                        tongTien += Double.parseDouble(ls.get(i).get(1)) * 20000 * 10 / 100;
                         continue;
                     }
-                    tongSoTien += Integer.parseInt(k[1])*20000;
+                    tongTien += Double.parseDouble(ls.get(i).get(1)) * 20000;
                 }
-                txtTongVIP.setText(tongSoVip);
-                txtTongDoanhThu.setText(tongSoTien + "");
+                txtTongDoanhThu.setText(tongTien + "");
+                txtTongVIP.setText(vip + "");
                 break;
             case R.id.btnQuit:
                 finish();

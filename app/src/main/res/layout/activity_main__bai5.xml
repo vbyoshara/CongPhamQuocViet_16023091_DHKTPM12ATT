@@ -103,6 +103,7 @@
 
                 <Button
                     android:id="@+id/btnThongKe"
+                    android:onClick="suKien"
                     android:layout_weight="1"
                     android:text="Thống kê"
                     android:textAllCaps="false" />
