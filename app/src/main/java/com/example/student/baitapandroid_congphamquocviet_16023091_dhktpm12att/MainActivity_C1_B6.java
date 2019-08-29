@@ -27,7 +27,6 @@ public class MainActivity_C1_B6 extends AppCompatActivity {
         ArrayAdapter adt = new ArrayAdapter(MainActivity_C1_B6.this, android.R.layout.simple_list_item_1, ls);
 
         lsvMember.setAdapter(adt);
-
         lsvMember.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
