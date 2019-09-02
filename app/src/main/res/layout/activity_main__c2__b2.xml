@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_C2_B2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập hệ thống"
+        android:background="#00cba9"
+        android:textAlignment="center"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Tài khoản:"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:hint="Không được để trống"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Tài khoản:"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_weight="1"
+                android:hint="Không được để trống"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/cbLuu"
+                android:text="Lưu thông tin"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnDangNhap"
+                android:onClick="suKien"
+                android:layout_weight="1"
+                android:text="Đăng nhập"
+                android:textAllCaps="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnThoat"
+                android:onClick="suKien"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:textAllCaps="false"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
