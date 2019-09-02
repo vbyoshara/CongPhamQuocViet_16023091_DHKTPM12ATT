@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_C2_B3">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp">
+        <TableRow>
+            <TextView
+                android:text="Nhập tên: "
+                android:layout_weight="1"
+                android:background="#dbb481"/>
+            <EditText
+                android:id="@+id/edtHoTen"
+                android:layout_weight="1"
+                android:layout_width="300dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"/>
+            <Button
+                android:onClick="xuLy"
+                android:text="Nhập"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/txtThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#006d81"
+        android:textSize="20dp"/>
+    <ListView
+        android:id="@+id/lsvMember"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>
