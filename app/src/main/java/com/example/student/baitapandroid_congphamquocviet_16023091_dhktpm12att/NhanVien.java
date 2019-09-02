@@ -3,6 +3,7 @@ package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 public class NhanVien {
     private String id;
     private String name;
+    private ITienLuong tienLuong;
 
     public String getId() {
         return id;
@@ -20,11 +21,15 @@ public class NhanVien {
         this.name = name;
     }
 
-    public double TinhLuong(){
-        return 500;
+    public ITienLuong getTienLuong() {
+        return tienLuong;
+    }
+
+    public void setTienLuong(ITienLuong tienLuong) {
+        this.tienLuong = tienLuong;
     }
 
     public String toString(){
-        return this.id + "-" + this.name;
+        return this.id + "-" + this.name + "--> " + tienLuong.tínhTienLuong() ;
     }
 }
