@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_C2_B5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhân viên"
+        android:textAlignment="center"
+        android:background="#007d00"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:padding="2dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Mã NV :"
+                android:layout_weight="1"
+                android:layout_width="50dp"/>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="300dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Tên NV :"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Loại NV :"
+                android:layout_weight="1"/>
+            <RadioGroup
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rdChinhThuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chính thức"
+                    android:paddingRight="20dp"/>
+                <RadioButton
+                    android:id="@+id/rdThoiVu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chính thức"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_weight="1"/>
+            <Button
+                android:layout_weight="1"
+                android:text="Nhập NV"
+                android:textAllCaps="false"
+                android:textSize="20dp"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#007d00"/>
+</LinearLayout>
