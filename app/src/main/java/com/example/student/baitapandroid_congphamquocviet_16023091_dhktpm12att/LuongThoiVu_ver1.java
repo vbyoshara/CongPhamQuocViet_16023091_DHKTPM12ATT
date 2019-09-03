@@ -1,8 +1,8 @@
 package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
-public class LuongChinhThuc implements ITienLuong {
+public class LuongThoiVu_ver1 implements ITienLuong_ver1 {
     @Override
     public String tínhTienLuong() {
-        return "Full time = " + 500;
+        return "Part time = " + 150;
     }
 }

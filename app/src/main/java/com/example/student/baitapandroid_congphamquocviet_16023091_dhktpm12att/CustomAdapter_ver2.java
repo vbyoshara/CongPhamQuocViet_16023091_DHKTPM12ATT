@@ -4,32 +4,31 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
 
-public class CustomAdapter extends BaseAdapter {
+public class CustomAdapter_ver2 extends BaseAdapter {
 
-    private Activity activity;
-    private ArrayList<String> lsTen;
+    public Activity activity;
+    public ArrayList<String> ls;
 
-    public  CustomAdapter(Activity activity,ArrayList<String> lsTen){
+    public CustomAdapter_ver2(Activity activity, ArrayList<String> ls) {
         this.activity = activity;
-        this.lsTen = lsTen;
+        this.ls = ls;
     }
+
     @Override
     public int getCount() {
-
-        return lsTen.size();
+        return ls.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return lsTen.get(i);
+        return ls.get(i);
     }
 
     @Override
@@ -40,11 +39,12 @@ public class CustomAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = activity.getLayoutInflater();
+        view = inflater.inflate(R.layout.list_item_ver2, null);
 
-        view = inflater.inflate(R.layout.list_item_ver1,null);
+        TextView txtThongTin = (TextView) view.findViewById(R.id.txtThongTin);
+        ImageView imvIcon = (ImageView) view.findViewById(R.id.imvIcon);
 
-        TextView txtHoTen = (TextView)view.findViewById(R.id.txtHoTen);
-        txtHoTen.setText(lsTen.get(i));
+        txtThongTin.setText(ls.get(i));
         return view;
     }
 }

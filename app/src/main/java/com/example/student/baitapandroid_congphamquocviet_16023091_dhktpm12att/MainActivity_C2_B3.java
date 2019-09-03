@@ -2,16 +2,13 @@ package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import java.io.Console;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity_C2_B3 extends AppCompatActivity {
 
@@ -19,7 +16,7 @@ public class MainActivity_C2_B3 extends AppCompatActivity {
     TextView txtThongBao;
     EditText edtHoTen;
     ArrayList<String> ls;
-    CustomAdapter ca;
+    CustomAdapter_ver1 ca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +33,7 @@ public class MainActivity_C2_B3 extends AppCompatActivity {
         ls.add("ty");
         ls.add("bin");
 
-        ca = new CustomAdapter(this, ls);
+        ca = new CustomAdapter_ver1(this, ls);
 
         lsMember.setAdapter(ca);
 

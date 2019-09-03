@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_C3_B1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#008000"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Quản lý nhân viên"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:text="Mã NV : "/>
+            <EditText
+                android:id="@+id/edtMaNV"
+                android:layout_weight="1"
+                android:layout_width="250dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:text="Tên NV : "/>
+            <EditText
+                android:id="@+id/edtTenNV"
+                android:layout_weight="1"
+                android:layout_width="250dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:text="Giới tính:"/>
+            <RadioGroup
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"/>
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Nhập NV"
+        android:layout_gravity="right"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#008000"
+        android:text="Danh sách nhân viên"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,9 +1,9 @@
 package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
-public class NhanVien {
+public class NhanVien_ver1 {
     private String id;
     private String name;
-    private ITienLuong tienLuong;
+    private ITienLuong_ver1 tienLuong;
 
     public String getId() {
         return id;
@@ -21,11 +21,11 @@ public class NhanVien {
         this.name = name;
     }
 
-    public ITienLuong getTienLuong() {
+    public ITienLuong_ver1 getTienLuong() {
         return tienLuong;
     }
 
-    public void setTienLuong(ITienLuong tienLuong) {
+    public void setTienLuong(ITienLuong_ver1 tienLuong) {
         this.tienLuong = tienLuong;
     }
 

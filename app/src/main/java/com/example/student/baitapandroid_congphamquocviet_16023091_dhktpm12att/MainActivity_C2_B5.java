@@ -3,7 +3,6 @@ package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -41,13 +40,13 @@ public class MainActivity_C2_B5 extends AppCompatActivity {
     }
 
     public void SuKien(View view) {
-        NhanVien n = new NhanVien();
+        NhanVien_ver1 n = new NhanVien_ver1();
         n.setId(edtMaNV.getText().toString());
         n.setName(edtTenNV.getText().toString());
         if(rdChinhThuc.isChecked())
-            n.setTienLuong(new LuongChinhThuc());
+            n.setTienLuong(new LuongChinhThuc_ver1());
         else
-            n.setTienLuong(new LuongThoiVu());
+            n.setTienLuong(new LuongThoiVu_ver1());
 
         ls.add(n.toString());
 
