@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity_C2_B1"></activity>
+
+        <activity android:name=".MainActivity_C1_B1" />
+        <activity android:name=".MainActivity_C1_B2" />
+        <activity android:name=".MainActivity_C1_B3" />
+        <activity android:name=".MainActivity_C1_B4" />
+        <activity android:name=".MainActivity_C1_B5" />
+        <activity android:name=".MainActivity_C1_B6" />
+        <activity android:name=".MainActivity_C2_B1"/>
+        <activity android:name=".MainActivity_C2_B2" />
+        <activity android:name=".MainActivity_C2_B3" />
+        <activity android:name=".MainActivity_C2_B4" />
+        <activity android:name=".MainActivity_C2_B5" />
+
         <activity android:name=".MainActivity_C3_B1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +29,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity_C1_B1" />
-        <activity android:name=".MainActivity_C1_B2" />
-        <activity android:name=".MainActivity_C1_B3" />
-        <activity android:name=".MainActivity_C1_B4" />
-        <activity android:name=".MainActivity_C1_B5" />
-        <activity android:name=".MainActivity_C1_B6" />
-        <activity android:name=".MainActivity_C2_B2" />
-        <activity android:name=".MainActivity_C2_B3" />
-        <activity android:name=".MainActivity_C2_B4" />
-        <activity android:name=".MainActivity_C2_B5" />
+
+
     </application>
 
 </manifest>

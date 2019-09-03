@@ -48,28 +48,46 @@
                     android:layout_height="wrap_content"
                     android:text="Nữ"/>
                 <RadioButton
+                    android:id="@+id/rdNam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nam"/>
+                    android:text="Nam"
+                    android:checked="true"/>
             </RadioGroup>
         </TableRow>
     </TableLayout>
     <Button
+        android:id="@+id/btnNhapNV"
+        android:onClick="SuKien"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Nhập NV"
         android:layout_gravity="right"/>
-    <TextView
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="#008000"
-        android:text="Danh sách nhân viên"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"/>
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="#008000"
+                android:text="Danh sách nhân viên"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/btnXoa"
+                android:onClick="SuKien"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="X"
+                android:textColor="@android:color/holo_red_dark"/>
+        </TableRow>
+    </TableLayout>
+
     <ListView
+        android:id="@+id/lsMember"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 
 </LinearLayout>
