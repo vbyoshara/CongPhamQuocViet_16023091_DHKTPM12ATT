@@ -1,11 +1,9 @@
 package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -17,7 +15,7 @@ public class MainActivity_C3_B1 extends AppCompatActivity {
     public ArrayList<NhanVien_ver2> ls;
     public EditText edtMaNV,edtTenNV;
     public RadioButton rdNam;
-    public CustomAdapter_ver2 adt;
+    public CustomAdapter_C3_B1 adt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +32,7 @@ public class MainActivity_C3_B1 extends AppCompatActivity {
         ls.add(new NhanVien_ver2("1","Viet",true));
         ls.add(new NhanVien_ver2("2","Vy",false));
 
-        adt = new CustomAdapter_ver2(this,ls);
+        adt = new CustomAdapter_C3_B1(this,ls);
 
         lsMember.setAdapter(adt);
     }

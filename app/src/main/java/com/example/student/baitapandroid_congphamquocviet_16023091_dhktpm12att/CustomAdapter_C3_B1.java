@@ -1,8 +1,6 @@
 package com.example.student.baitapandroid_congphamquocviet_16023091_dhktpm12att;
 
 import android.app.Activity;
-import android.content.res.Resources;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +12,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class CustomAdapter_ver2 extends BaseAdapter {
+public class CustomAdapter_C3_B1 extends BaseAdapter {
 
     private ArrayList<NhanVien_ver2> ls;
     private Activity activity;
     private ArrayList<Integer> lsCb;
 
-    public CustomAdapter_ver2(Activity activity, ArrayList<NhanVien_ver2> ls) {
+    public CustomAdapter_C3_B1(Activity activity, ArrayList<NhanVien_ver2> ls) {
         this.ls = ls;
         this.activity = activity;
         lsCb = new ArrayList<>();
@@ -63,7 +61,7 @@ public class CustomAdapter_ver2 extends BaseAdapter {
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = activity.getLayoutInflater();
-        view = inflater.inflate(R.layout.list_item_ver2, null);
+        view = inflater.inflate(R.layout.list_item_c3_b1, null);
 
         TextView txtThongTin = (TextView) view.findViewById(R.id.txtThongTin);
         ImageView imvIcon = (ImageView) view.findViewById(R.id.imvIcon);

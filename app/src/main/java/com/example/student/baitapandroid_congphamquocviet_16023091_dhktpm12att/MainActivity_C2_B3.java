@@ -16,7 +16,7 @@ public class MainActivity_C2_B3 extends AppCompatActivity {
     TextView txtThongBao;
     EditText edtHoTen;
     ArrayList<String> ls;
-    CustomAdapter_ver1 ca;
+    CustomAdapter_C2_B4 ca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity_C2_B3 extends AppCompatActivity {
         ls.add("ty");
         ls.add("bin");
 
-        ca = new CustomAdapter_ver1(this, ls);
+        ca = new CustomAdapter_C2_B4(this, ls);
 
         lsMember.setAdapter(ca);
 
