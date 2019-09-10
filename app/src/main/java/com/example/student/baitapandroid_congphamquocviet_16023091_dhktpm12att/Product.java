@@ -23,4 +23,9 @@ public class Product extends Goods {
     public Product(){
         super();
     }
+
+    @Override
+    public String toString() {
+        return super.getId() + " - " +super.getName();
+    }
 }

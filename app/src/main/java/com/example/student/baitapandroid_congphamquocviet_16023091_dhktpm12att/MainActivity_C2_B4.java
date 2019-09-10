@@ -35,22 +35,6 @@ public class MainActivity_C2_B4 extends ListActivity implements View.OnLongClick
         ca = new CustomAdapter_C2_B4(this, ls);
 
         lsMember.setAdapter(ca);
-
-//        lsMember.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//
-//            }
-//        });
-
-//        lsMember.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                ls.remove(i);
-//                ca.notifyDataSetChanged();
-//                return true;
-//            }
-//        });
     }
 
     public void xuLy(View view) {

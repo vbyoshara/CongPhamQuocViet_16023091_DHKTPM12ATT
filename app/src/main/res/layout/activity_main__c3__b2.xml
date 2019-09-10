@@ -63,7 +63,7 @@
         android:textSize="15dp"
         android:gravity="center"/>
     <ListView
-        android:id="@+id/lsSanPham"
+        android:id="@+id/lsSP"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
 </LinearLayout>
